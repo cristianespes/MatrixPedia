@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		199FAF6C21CE53F600EC4531 /* CharacterProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199FAF6B21CE53F600EC4531 /* CharacterProfileViewController.swift */; };
+		199FAF6E21CE5A0700EC4531 /* CharacterProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199FAF6D21CE5A0700EC4531 /* CharacterProfile.swift */; };
+		19EDFD0721CE492600AF8E71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EDFD0621CE492600AF8E71 /* AppDelegate.swift */; };
+		19EDFD0E21CE492600AF8E71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19EDFD0D21CE492600AF8E71 /* Assets.xcassets */; };
+		19EDFD1121CE492600AF8E71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19EDFD0F21CE492600AF8E71 /* LaunchScreen.storyboard */; };
+		19EDFD1C21CE492600AF8E71 /* MatrixPediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EDFD1B21CE492600AF8E71 /* MatrixPediaTests.swift */; };
+		19EDFD2A21CE499900AF8E71 /* MatrixCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EDFD2921CE499900AF8E71 /* MatrixCharacter.swift */; };
+		19EDFD2C21CE49C800AF8E71 /* CharactersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EDFD2B21CE49C800AF8E71 /* CharactersTableViewController.swift */; };
+		4F7B08525FB5338D21D73F31 /* Pods_MatrixPedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F595C744308187AC1AD67E10 /* Pods_MatrixPedia.framework */; };
+		7637C949AE627D2C8358D41C /* Pods_MatrixPediaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C84C195C27692C111E5CC3 /* Pods_MatrixPediaTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19EDFD1821CE492600AF8E71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19EDFCFB21CE492600AF8E71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19EDFD0221CE492600AF8E71;
+			remoteInfo = MatrixPedia;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		199FAF6B21CE53F600EC4531 /* CharacterProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterProfileViewController.swift; sourceTree = "<group>"; };
+		199FAF6D21CE5A0700EC4531 /* CharacterProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterProfile.swift; sourceTree = "<group>"; };
+		19EDFD0321CE492600AF8E71 /* MatrixPedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatrixPedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		19EDFD0621CE492600AF8E71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		19EDFD0D21CE492600AF8E71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19EDFD1021CE492600AF8E71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		19EDFD1221CE492600AF8E71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19EDFD1721CE492600AF8E71 /* MatrixPediaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatrixPediaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		19EDFD1B21CE492600AF8E71 /* MatrixPediaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixPediaTests.swift; sourceTree = "<group>"; };
+		19EDFD1D21CE492600AF8E71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19EDFD2921CE499900AF8E71 /* MatrixCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixCharacter.swift; sourceTree = "<group>"; };
+		19EDFD2B21CE49C800AF8E71 /* CharactersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersTableViewController.swift; sourceTree = "<group>"; };
+		37C84C195C27692C111E5CC3 /* Pods_MatrixPediaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MatrixPediaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9278B6DE991B1D8154B7F1A2 /* Pods-MatrixPediaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatrixPediaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MatrixPediaTests/Pods-MatrixPediaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AA86ED0CB5357D9E4E5D4085 /* Pods-MatrixPedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatrixPedia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MatrixPedia/Pods-MatrixPedia.debug.xcconfig"; sourceTree = "<group>"; };
+		C0D5B9D984B28385D6EBAF11 /* Pods-MatrixPedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatrixPedia.release.xcconfig"; path = "Pods/Target Support Files/Pods-MatrixPedia/Pods-MatrixPedia.release.xcconfig"; sourceTree = "<group>"; };
+		CF57A64E60EFFAE06F7038F5 /* Pods-MatrixPediaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatrixPediaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MatrixPediaTests/Pods-MatrixPediaTests.release.xcconfig"; sourceTree = "<group>"; };
+		F595C744308187AC1AD67E10 /* Pods_MatrixPedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MatrixPedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19EDFD0021CE492600AF8E71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F7B08525FB5338D21D73F31 /* Pods_MatrixPedia.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19EDFD1421CE492600AF8E71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7637C949AE627D2C8358D41C /* Pods_MatrixPediaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D890A70E2E99F5B6600D0FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F595C744308187AC1AD67E10 /* Pods_MatrixPedia.framework */,
+				37C84C195C27692C111E5CC3 /* Pods_MatrixPediaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		19EDFCFA21CE492600AF8E71 = {
+			isa = PBXGroup;
+			children = (
+				19EDFD0521CE492600AF8E71 /* MatrixPedia */,
+				19EDFD1A21CE492600AF8E71 /* MatrixPediaTests */,
+				19EDFD0421CE492600AF8E71 /* Products */,
+				4A2FE6AF4E7290E8A6F2AE8E /* Pods */,
+				0D890A70E2E99F5B6600D0FF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		19EDFD0421CE492600AF8E71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19EDFD0321CE492600AF8E71 /* MatrixPedia.app */,
+				19EDFD1721CE492600AF8E71 /* MatrixPediaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19EDFD0521CE492600AF8E71 /* MatrixPedia */ = {
+			isa = PBXGroup;
+			children = (
+				19EDFD0621CE492600AF8E71 /* AppDelegate.swift */,
+				19EDFD1221CE492600AF8E71 /* Info.plist */,
+				19EDFD2821CE496A00AF8E71 /* Resources */,
+				19EDFD2621CE495300AF8E71 /* Controller */,
+				19EDFD2721CE495A00AF8E71 /* Entity */,
+			);
+			path = MatrixPedia;
+			sourceTree = "<group>";
+		};
+		19EDFD1A21CE492600AF8E71 /* MatrixPediaTests */ = {
+			isa = PBXGroup;
+			children = (
+				19EDFD1B21CE492600AF8E71 /* MatrixPediaTests.swift */,
+				19EDFD1D21CE492600AF8E71 /* Info.plist */,
+			);
+			path = MatrixPediaTests;
+			sourceTree = "<group>";
+		};
+		19EDFD2621CE495300AF8E71 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				19EDFD2B21CE49C800AF8E71 /* CharactersTableViewController.swift */,
+				199FAF6B21CE53F600EC4531 /* CharacterProfileViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		19EDFD2721CE495A00AF8E71 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				19EDFD2921CE499900AF8E71 /* MatrixCharacter.swift */,
+				199FAF6D21CE5A0700EC4531 /* CharacterProfile.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		19EDFD2821CE496A00AF8E71 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				19EDFD0F21CE492600AF8E71 /* LaunchScreen.storyboard */,
+				19EDFD0D21CE492600AF8E71 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4A2FE6AF4E7290E8A6F2AE8E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA86ED0CB5357D9E4E5D4085 /* Pods-MatrixPedia.debug.xcconfig */,
+				C0D5B9D984B28385D6EBAF11 /* Pods-MatrixPedia.release.xcconfig */,
+				9278B6DE991B1D8154B7F1A2 /* Pods-MatrixPediaTests.debug.xcconfig */,
+				CF57A64E60EFFAE06F7038F5 /* Pods-MatrixPediaTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19EDFD0221CE492600AF8E71 /* MatrixPedia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19EDFD2021CE492600AF8E71 /* Build configuration list for PBXNativeTarget "MatrixPedia" */;
+			buildPhases = (
+				63499F58508549BDD07BBF35 /* [CP] Check Pods Manifest.lock */,
+				19EDFCFF21CE492600AF8E71 /* Sources */,
+				19EDFD0021CE492600AF8E71 /* Frameworks */,
+				19EDFD0121CE492600AF8E71 /* Resources */,
+				2B8E5C58E679A71D1DCAD8C2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MatrixPedia;
+			productName = MatrixPedia;
+			productReference = 19EDFD0321CE492600AF8E71 /* MatrixPedia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		19EDFD1621CE492600AF8E71 /* MatrixPediaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19EDFD2321CE492600AF8E71 /* Build configuration list for PBXNativeTarget "MatrixPediaTests" */;
+			buildPhases = (
+				2761E1407F7429E964AD0CFA /* [CP] Check Pods Manifest.lock */,
+				19EDFD1321CE492600AF8E71 /* Sources */,
+				19EDFD1421CE492600AF8E71 /* Frameworks */,
+				19EDFD1521CE492600AF8E71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19EDFD1921CE492600AF8E71 /* PBXTargetDependency */,
+			);
+			name = MatrixPediaTests;
+			productName = MatrixPediaTests;
+			productReference = 19EDFD1721CE492600AF8E71 /* MatrixPediaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19EDFCFB21CE492600AF8E71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Cristian Espes";
+				TargetAttributes = {
+					19EDFD0221CE492600AF8E71 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					19EDFD1621CE492600AF8E71 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 19EDFD0221CE492600AF8E71;
+					};
+				};
+			};
+			buildConfigurationList = 19EDFCFE21CE492600AF8E71 /* Build configuration list for PBXProject "MatrixPedia" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 19EDFCFA21CE492600AF8E71;
+			productRefGroup = 19EDFD0421CE492600AF8E71 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19EDFD0221CE492600AF8E71 /* MatrixPedia */,
+				19EDFD1621CE492600AF8E71 /* MatrixPediaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19EDFD0121CE492600AF8E71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19EDFD1121CE492600AF8E71 /* LaunchScreen.storyboard in Resources */,
+				19EDFD0E21CE492600AF8E71 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19EDFD1521CE492600AF8E71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2761E1407F7429E964AD0CFA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MatrixPediaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B8E5C58E679A71D1DCAD8C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MatrixPedia/Pods-MatrixPedia-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MatrixPedia/Pods-MatrixPedia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63499F58508549BDD07BBF35 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MatrixPedia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19EDFCFF21CE492600AF8E71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				199FAF6C21CE53F600EC4531 /* CharacterProfileViewController.swift in Sources */,
+				19EDFD2A21CE499900AF8E71 /* MatrixCharacter.swift in Sources */,
+				19EDFD2C21CE49C800AF8E71 /* CharactersTableViewController.swift in Sources */,
+				199FAF6E21CE5A0700EC4531 /* CharacterProfile.swift in Sources */,
+				19EDFD0721CE492600AF8E71 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19EDFD1321CE492600AF8E71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19EDFD1C21CE492600AF8E71 /* MatrixPediaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19EDFD1921CE492600AF8E71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19EDFD0221CE492600AF8E71 /* MatrixPedia */;
+			targetProxy = 19EDFD1821CE492600AF8E71 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		19EDFD0F21CE492600AF8E71 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19EDFD1021CE492600AF8E71 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19EDFD1E21CE492600AF8E71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		19EDFD1F21CE492600AF8E71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19EDFD2121CE492600AF8E71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA86ED0CB5357D9E4E5D4085 /* Pods-MatrixPedia.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W9B4U9692J;
+				INFOPLIST_FILE = MatrixPedia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cristianespes.MatrixPedia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		19EDFD2221CE492600AF8E71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0D5B9D984B28385D6EBAF11 /* Pods-MatrixPedia.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W9B4U9692J;
+				INFOPLIST_FILE = MatrixPedia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cristianespes.MatrixPedia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		19EDFD2421CE492600AF8E71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9278B6DE991B1D8154B7F1A2 /* Pods-MatrixPediaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W9B4U9692J;
+				INFOPLIST_FILE = MatrixPediaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cristianespes.MatrixPediaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MatrixPedia.app/MatrixPedia";
+			};
+			name = Debug;
+		};
+		19EDFD2521CE492600AF8E71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF57A64E60EFFAE06F7038F5 /* Pods-MatrixPediaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W9B4U9692J;
+				INFOPLIST_FILE = MatrixPediaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cristianespes.MatrixPediaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MatrixPedia.app/MatrixPedia";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19EDFCFE21CE492600AF8E71 /* Build configuration list for PBXProject "MatrixPedia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19EDFD1E21CE492600AF8E71 /* Debug */,
+				19EDFD1F21CE492600AF8E71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19EDFD2021CE492600AF8E71 /* Build configuration list for PBXNativeTarget "MatrixPedia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19EDFD2121CE492600AF8E71 /* Debug */,
+				19EDFD2221CE492600AF8E71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19EDFD2321CE492600AF8E71 /* Build configuration list for PBXNativeTarget "MatrixPediaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19EDFD2421CE492600AF8E71 /* Debug */,
+				19EDFD2521CE492600AF8E71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19EDFCFB21CE492600AF8E71 /* Project object */;
+}
