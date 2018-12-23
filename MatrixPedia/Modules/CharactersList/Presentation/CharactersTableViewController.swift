@@ -11,39 +11,20 @@ import Alamofire
 
 class CharactersTableViewController: UITableViewController {
     
-    var characters: [MatrixCharacter] = []
+    var characters: [CharacterViewModel] = []
+    var presenter: CharacterListPresenter?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableViewSetup()
-        loadCharacters()
+        presenter?.viewDidLoad()
     }
     
     func tableViewSetup() {
         title = "Characters"
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 40
-    }
-    
-    func loadCharacters() {
-        Alamofire.request("http://127.0.0.1/characters").responseJSON { [weak self] (response) in
-            
-            if let data = response.data,
-                let jsonData = try? JSONSerialization.jsonObject(with: data, options: .allowFragments),
-                let characters = jsonData as? [[String: Any]] {
-                var newCharacters = [MatrixCharacter]()
-                
-                for character in characters {
-                    guard let newCharacter = MatrixCharacter(json: character) else { continue }
-                    
-                    newCharacters.append(newCharacter)
-                }
-                
-                self?.characters = newCharacters
-                self?.tableView.reloadData()
-            }
-        }
     }
 
     // MARK: - Table view data source
@@ -66,17 +47,26 @@ class CharactersTableViewController: UITableViewController {
         }()
         
         let character = characters[indexPath.row]
-        cell.textLabel?.text = character.alias
-        cell.detailTextLabel?.text = character.type.rawValue.capitalized
+        cell.textLabel?.text = character.name
+        cell.detailTextLabel?.text = character.type
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let characterSelected = characters[indexPath.row]
-        let characterProfileVC = CharacterProfileViewController(withCharacterId: characterSelected.id)
-        
-        navigationController?.pushViewController(characterProfileVC, animated: true)
-        
         tableView.cellForRow(at: indexPath)?.selectionStyle = .none
+        let characterSelected = characters[indexPath.row]
+        
+        presenter?.userDidSelectCharacter(withId: characterSelected.id)
+    }
+}
+
+extension CharactersTableViewController: CharacterListPresenterOutput {
+    func loadCharacters(_ characters: [CharacterViewModel]) {
+        self.characters = characters
+        tableView.reloadData()
+    }
+    
+    func showError(message: String) {
+        showErrorAlert(message: message)
     }
 }
